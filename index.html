@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генеалогическое древо семьи Есмухановых - FamilyTreeJS</title>
+    <script src="familytree.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        #tree {
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: white;
+        }
+        
+        .stats {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .controls button {
+            margin: 0 5px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background: #3498db;
+            color: white;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        
+        .controls button:hover {
+            background: #2980b9;
+        }
+        
+        .controls button:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yesmukhanov Family Tree</h1>
+    
+    <div class="stats" id="stats">
+        <p>Загрузка данных...</p>
+    </div>
+    
+    <div class="controls">
+        <button id="fitBtn" onclick="safeFit()">Подогнать размер</button>
+        <button onclick="toggleFullscreen()">Полноэкранный режим</button>
+    </div>
+    
+    <div id="tree"></div>
+
+    <script src="family-data.js"></script>
+    <script src="convert-data.js"></script>
+    <script>
+        // Преобразовать данные в формат FamilyTreeJS
+        const familyNodes = convertToFamilyTreeFormat(FAMILY_DATA);
+        
+        // Создать собственный шаблон
+        FamilyTree.templates.myTemplate = Object.assign({}, FamilyTree.templates.base);
+        FamilyTree.templates.myTemplate.size = [200, 80];
+        FamilyTree.templates.myTemplate.node = 
+            '<rect x="0" y="0" height="80" width="200" fill="#ffffff" stroke-width="2" stroke="#4a90e2" rx="10" ry="10"></rect>';
+        
+        // Мужской шаблон
+        FamilyTree.templates.myTemplateMale = Object.assign({}, FamilyTree.templates.myTemplate);
+        FamilyTree.templates.myTemplateMale.node = 
+            '<rect x="0" y="0" height="80" width="200" fill="#e6f3ff" stroke-width="2" stroke="#4a90e2" rx="10" ry="10"></rect>';
+        
+        // Женский шаблон
+        FamilyTree.templates.myTemplateFemale = Object.assign({}, FamilyTree.templates.myTemplate);
+        FamilyTree.templates.myTemplateFemale.node = 
+            '<rect x="0" y="0" height="80" width="200" fill="#ffe6f3" stroke-width="2" stroke="#e24a90" rx="10" ry="10"></rect>';
+        
+        // Поля для всех шаблонов
+        FamilyTree.templates.myTemplate.field_0 = 
+            '<text data-width="180" data-text-overflow="ellipsis" style="font-size: 14px; font-weight: bold;" fill="#333" x="100" y="25" text-anchor="middle">{val}</text>';
+        FamilyTree.templates.myTemplate.field_1 = 
+            '<text data-width="180" data-text-overflow="ellipsis" style="font-size: 12px;" fill="#666" x="100" y="45" text-anchor="middle">{val}</text>';
+        FamilyTree.templates.myTemplate.field_2 = 
+            '<text data-width="180" data-text-overflow="ellipsis" style="font-size: 10px;" fill="#999" x="100" y="60" text-anchor="middle">{val} лет</text>';
+            
+        // Применить поля к мужскому и женскому шаблонам
+        FamilyTree.templates.myTemplateMale.field_0 = FamilyTree.templates.myTemplate.field_0;
+        FamilyTree.templates.myTemplateMale.field_1 = FamilyTree.templates.myTemplate.field_1;
+        FamilyTree.templates.myTemplateMale.field_2 = FamilyTree.templates.myTemplate.field_2;
+        
+        FamilyTree.templates.myTemplateFemale.field_0 = FamilyTree.templates.myTemplate.field_0;
+        FamilyTree.templates.myTemplateFemale.field_1 = FamilyTree.templates.myTemplate.field_1;
+        FamilyTree.templates.myTemplateFemale.field_2 = FamilyTree.templates.myTemplate.field_2;
+        
+        // Обновить статистику
+        function updateStats() {
+            const totalPeople = FAMILY_DATA.people.length;
+            const maleCount = FAMILY_DATA.people.filter(p => p.gender === 'male').length;
+            const femaleCount = FAMILY_DATA.people.filter(p => p.gender === 'female').length;
+            const relationships = FAMILY_DATA.relationships.length;
+            
+            document.getElementById('stats').innerHTML = `
+                <strong>Статистика семьи:</strong>
+                Всего людей: <strong>${totalPeople}</strong> |
+                Мужчин: <strong>${maleCount}</strong> |
+                Женщин: <strong>${femaleCount}</strong> |
+                Связей: <strong>${relationships}</strong>
+            `;
+        }
+        
+        // Найти дедушку Мухаметсеита
+        const grandfather = familyNodes.find(node => 
+            node.name.includes('Мухаметсеит') || node.name.includes('Дедушка')
+        );
+        
+        console.log('Найден дедушка:', grandfather);
+        
+        // Создать семейное дерево
+        const family = new FamilyTree("#tree", {
+            // Корневой узел - дедушка
+            roots: [grandfather ? grandfather.id : 1],
+            
+            // Настройки внешнего вида
+            template: "myTemplate",
+            
+            // Настройки ориентации и поведения
+            orientation: FamilyTree.orientation.left,
+            scaleInitial: 0.6,
+            mouseScrool: FamilyTree.none,
+            
+            // Настройки узлов
+            nodeBinding: {
+                field_0: "name",
+                field_1: "birthDate",
+                field_2: "age"
+            },
+            
+            // Настройки цветов для разных полов
+            tags: {
+                "male": {
+                    template: "myTemplateMale"
+                },
+                "female": {
+                    template: "myTemplateFemale"
+                }
+            },
+            
+            // Настройки расстояний
+            siblingSeparation: 80,
+            subtreeSeparation: 80,
+            levelSeparation: 150,
+            editForm: null,
+            
+            // Данные - все узлы с указанием корня
+            nodes: familyNodes.map(node => {
+                const nodeWithTemplate = {
+                    id: node.id,
+                    name: node.name,
+                    gender: node.gender,
+                    tags: [node.gender],
+                    birthDate: node.birthDate || "",
+                    age: node.age || ""
+                };
+                
+                // Добавить родителей если есть
+                if (node.fid) nodeWithTemplate.fid = node.fid;
+                if (node.mid) nodeWithTemplate.mid = node.mid;
+                if (node.pids && node.pids.length > 0) nodeWithTemplate.pids = node.pids;
+                
+                return nodeWithTemplate;
+            })
+        });
+        
+        
+        // Обработчики событий
+        family.on('click', function(sender, args) {
+            console.log('Клик по узлу:', args);
+        });
+        
+        family.on('dbclick', function(sender, args) {
+            console.log('Двойной клик по узлу:', args);
+        });
+        
+        // Безопасные функции управления
+        function safeFit() {
+            try {
+                family.fit();
+                console.log('Размер подогнан');
+            } catch (e) {
+                console.log('Подгонка размера недоступна:', e.message);
+                alert('Подгонка размера временно недоступна');
+            }
+        }
+        
+        function safeCenter() {
+            try {
+                family.center();
+                console.log('Дерево отцентрировано');
+            } catch (e) {
+                console.log('Центрирование недоступно:', e.message);
+                alert('Центрирование временно недоступно');
+            }
+        }
+        
+        function showDebugInfo() {
+            console.log('=== ОТЛАДОЧНАЯ ИНФОРМАЦИЯ ===');
+            console.log('Всего узлов:', familyNodes.length);
+            console.log('Объект family:', family);
+            console.log('Данные узлов:', familyNodes);
+            
+            // Проверить корректность данных
+            const issues = [];
+            familyNodes.forEach(node => {
+                if (node.fid && !familyNodes.find(n => n.id === node.fid)) {
+                    issues.push(`Отец с ID ${node.fid} не найден для ${node.name}`);
+                }
+                if (node.mid && !familyNodes.find(n => n.id === node.mid)) {
+                    issues.push(`Мать с ID ${node.mid} не найдена для ${node.name}`);
+                }
+                if (node.pids) {
+                    node.pids.forEach(pid => {
+                        if (!familyNodes.find(n => n.id === pid)) {
+                            issues.push(`Супруг с ID ${pid} не найден для ${node.name}`);
+                        }
+                    });
+                }
+            });
+            
+            if (issues.length > 0) {
+                console.log('ПРОБЛЕМЫ В ДАННЫХ:');
+                issues.forEach(issue => console.log('- ' + issue));
+            } else {
+                console.log('Данные корректны');
+            }
+            
+            alert(`Отладочная информация в консоли. Найдено проблем: ${issues.length}`);
+        }
+        
+        // Функция для разворачивания всего дерева
+        function expandAll() {
+            console.log('Показываем всё дерево...');
+            
+            setTimeout(() => {
+                try {
+                    family.fit();
+                } catch (e) {
+                    console.log('Не удалось подогнать размер');
+                }
+            }, 500);
+        }
+        
+        // Функция для центрирования на дедушке
+        function collapseAll() {
+            console.log('Центрируем на дедушке...');
+            
+            setTimeout(() => {
+                try {
+                    family.center();
+                } catch (e) {
+                    console.log('Не удалось отцентровать');
+                }
+            }, 500);
+        }
+        
+        // Функция полноэкранного режима
+        function toggleFullscreen() {
+            const treeElement = document.getElementById('tree');
+            if (!document.fullscreenElement) {
+                treeElement.requestFullscreen().then(() => {
+                    treeElement.style.height = '100vh';
+                    setTimeout(() => family.draw(), 100);
+                });
+            } else {
+                document.exitFullscreen().then(() => {
+                    treeElement.style.height = '800px';
+                    setTimeout(() => family.draw(), 100);
+                });
+            }
+        }
+        
+        // Обработчик выхода из полноэкранного режима
+        document.addEventListener('fullscreenchange', function() {
+            if (!document.fullscreenElement) {
+                document.getElementById('tree').style.height = '800px';
+                setTimeout(() => family.draw(), 100);
+            }
+        });
+        
+        // Инициализация при загрузке
+        document.addEventListener('DOMContentLoaded', function() {
+            updateStats();
+            
+            // Дождаться полной загрузки дерева
+            family.on('init', function() {
+                console.log('Дерево инициализировано');
+                setTimeout(() => {
+                    try {
+                        family.center();
+                    } catch (e) {
+                        console.log('Центрирование недоступно');
+                    }
+                }, 500);
+            });
+        });
+        
+        // Отладочная информация
+        console.log('Всего узлов:', familyNodes.length);
+        console.log('Данные узлов:', familyNodes);
+        
+        // Проверка корректности данных
+        familyNodes.forEach(node => {
+            if (node.fid && !familyNodes.find(n => n.id === node.fid)) {
+                console.warn(`Отец с ID ${node.fid} не найден для ${node.name}`);
+            }
+            if (node.mid && !familyNodes.find(n => n.id === node.mid)) {
+                console.warn(`Мать с ID ${node.mid} не найдена для ${node.name}`);
+            }
+            if (node.pids) {
+                node.pids.forEach(pid => {
+                    if (!familyNodes.find(n => n.id === pid)) {
+                        console.warn(`Супруг с ID ${pid} не найден для ${node.name}`);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
