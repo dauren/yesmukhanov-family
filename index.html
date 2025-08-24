@@ -100,7 +100,11 @@
             color: white;
             text-decoration: none;
         }
+        #stats{
+            display: none;
+        }
     </style>
+
 </head>
 <body>
     <h1>Yesmukhanov Family Tree</h1>
@@ -110,10 +114,9 @@
     </div>
     
     <div class="controls">
-        <button id="fitBtn" onclick="safeFit()">Подогнать размер</button>
         <!-- <a href="family-birthdays.ics" class="calendar-link">📅 Добавить в календарь</a> -->
-        <a href="family-birthdays.ical" class="calendar-link">📅 Добавить в календарь</a>
-        <button onclick="toggleFullscreen()">Полноэкранный режим</button>
+        <a href="family-birthdays.ical" class="calendar-link">📅 Календарь</a>
+        <button onclick="toggleFullscreen()">full screen</button>
     </div>
     
     <div id="tree"></div>
