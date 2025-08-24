@@ -770,7 +770,7 @@ const FAMILY_DATA = {
       },
       "gender": "female",
       "birth": {
-        "date": null,
+        "date": "2019-10-27",
         "place": null
       },
       "death": {
@@ -1676,9 +1676,9 @@ const FAMILY_DATA = {
     {
       "id": "p_63",
       "name": {
-        "display": "Мансур Есмуханов",
+        "display": "Мансур Файзулин",
         "given": "Мансур",
-        "family": "Есмуханов",
+        "family": "Файзулин",
         "middle": null,
         "aka": [
           "Внук Ирана, сын Мадины"
@@ -1973,9 +1973,9 @@ const FAMILY_DATA = {
     {
       "id": "p_74",
       "name": {
-        "display": "Ернур Есмуханов",
+        "display": "Ернур Букенбаев",
         "given": "Ернур",
-        "family": "Есмуханов",
+        "family": "Букенбаев",
         "middle": null,
         "aka": [
           "Внук Ирана, сын Мадины"

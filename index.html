@@ -115,8 +115,8 @@
     
     <div class="controls">
         <!-- <a href="family-birthdays.ics" class="calendar-link">📅 Добавить в календарь</a> -->
-        <!-- <a href="family-birthdays.ical" class="calendar-link">📅 Календарь</a> -->
-        <button onclick="toggleFullscreen()">full screen</button>
+        <a href="family-birthdays.ics" class="calendar-link">📅 Календарь</a> 
+        <!-- <button onclick="toggleFullscreen()">full screen</button> -->
     </div>
     
     <div id="tree"></div>
@@ -220,6 +220,7 @@
             subtreeSeparation: 80,
             levelSeparation: 150,
             editForm: null,
+            enableSearch: false,
             
             // Данные - все узлы с указанием корня
             nodes: familyNodes.map(node => {
@@ -521,5 +522,32 @@
             }
         });
     </script>
+    <style type="text/css">
+        .bft-search {
+            position: fixed !important;
+            top: 70px !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            z-index: 1000 !important;
+            background: rgba(255, 255, 255, 0.95) !important;
+            border: 2px solid #3498db !important;
+            border-radius: 25px !important;
+            padding: 5px 10px !important;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+        }
+        
+        .bft-search input {
+            border: none !important;
+            outline: none !important;
+            padding: 8px 15px !important;
+            font-size: 14px !important;
+            border-radius: 20px !important;
+            width: 250px !important;
+        }
+        
+        .bft-search input:focus {
+            box-shadow: 0 0 5px #3498db !important;
+        }
+    </style>
 </body>
 </html>
