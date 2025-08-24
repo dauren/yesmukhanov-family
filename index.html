@@ -115,7 +115,7 @@
     
     <div class="controls">
         <!-- <a href="family-birthdays.ics" class="calendar-link">📅 Добавить в календарь</a> -->
-        <a href="family-birthdays-fixed.ics" class="calendar-link">📅 Календарь</a> 
+        <a href="#" onclick="addToCalendar(); return false;" class="calendar-link">📅 Календарь</a> 
         <!-- <button onclick="toggleFullscreen()">full screen</button> -->
     </div>
     
@@ -345,7 +345,7 @@
             // Создаем ссылку для скачивания
             const link = document.createElement('a');
             link.href = url;
-            link.download = 'family-birthdays.ics';
+            link.download = 'family-birthdays-complete.ics';
             link.style.display = 'none';
             
             // Добавляем ссылку в DOM и кликаем по ней
@@ -358,6 +358,26 @@
             
             // Показываем сообщение об успехе
             showMessage('✅ Календарь добавлен! Проверьте папку загрузок.', 'success');
+        }
+        
+        // Создаем полный календарь при загрузке страницы
+        function createCompleteCalendar() {
+            const icalContent = generateICalContent();
+            
+            // Считаем события
+            const eventCount = (icalContent.match(/BEGIN:VEVENT/g) || []).length;
+            console.log(`Создается календарь с ${eventCount} событиями`);
+            
+            // Создаем blob для статического файла
+            const blob = new Blob([icalContent], { type: 'text/calendar;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            
+            // Обновляем ссылку на календарь
+            const calendarLink = document.querySelector('.calendar-link');
+            if (calendarLink) {
+                calendarLink.href = url;
+                calendarLink.download = 'family-birthdays-complete.ics';
+            }
         }
         
         // Функция для генерации iCal содержимого
@@ -499,6 +519,9 @@
         // Инициализация при загрузке
         document.addEventListener('DOMContentLoaded', function() {
             updateStats();
+            
+            // Создаем полный календарь
+            createCompleteCalendar();
             
             // Дождаться полной загрузки дерева
             family.on('init', function() {
