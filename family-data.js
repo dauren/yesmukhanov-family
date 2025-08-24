@@ -2631,7 +2631,7 @@ const FAMILY_DATA = {
           "Внучка Жараса, дочь Куаныша"
         ]
       },
-      "gender": "male",
+      "gender": "female",
       "birth": {
         "date": "2021-07-03",
         "place": null
@@ -3182,7 +3182,7 @@ const FAMILY_DATA = {
     },
     {
       "type": "parent-child",
-      "parent": "p_74",
+      "parent": "p_58",
        "child": "p_98"
     }
     
