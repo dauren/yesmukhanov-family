@@ -7,12 +7,11 @@
     <script src="familytree.js"></script>
     <style>
         html,body{
-             width: 100%;
-  height: 100%;
-  padding: 0;
-  margin:0;
-  overflow: hidden;
-              overflow: hidden;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin:0;
+            overflow: hidden;
         }
         body {
             font-family: Arial, sans-serif;
@@ -68,6 +67,39 @@
             background: #bdc3c7;
             cursor: not-allowed;
         }
+        
+        /* Анимация для сообщений */
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        /* Стили для ссылки календаря */
+        .calendar-link {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background: #27ae60;
+            color: white;
+            cursor: pointer;
+            font-size: 12px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        
+        .calendar-link:hover {
+            background: #229954;
+            color: white;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -79,6 +111,7 @@
     
     <div class="controls">
         <button id="fitBtn" onclick="safeFit()">Подогнать размер</button>
+        <a href="family-birthdays.ics" class="calendar-link">📅 Добавить в календарь</a>
         <button onclick="toggleFullscreen()">Полноэкранный режим</button>
     </div>
     
@@ -129,13 +162,15 @@
             const maleCount = FAMILY_DATA.people.filter(p => p.gender === 'male').length;
             const femaleCount = FAMILY_DATA.people.filter(p => p.gender === 'female').length;
             const relationships = FAMILY_DATA.relationships.length;
+            const peopleWithBirthDates = FAMILY_DATA.people.filter(p => p.birth && p.birth.date).length;
             
             document.getElementById('stats').innerHTML = `
                 <strong>Статистика семьи:</strong>
                 Всего людей: <strong>${totalPeople}</strong> |
                 Мужчин: <strong>${maleCount}</strong> |
                 Женщин: <strong>${femaleCount}</strong> |
-                Связей: <strong>${relationships}</strong>
+                Связей: <strong>${relationships}</strong> |
+                С датами рождения: <strong>${peopleWithBirthDates}</strong>
             `;
         }
         
@@ -291,6 +326,133 @@
                     console.log('Не удалось отцентровать');
                 }
             }, 500);
+        }
+        
+        // Функция для добавления календаря
+        function addToCalendar() {
+            // Создаем содержимое iCal файла
+            const icalContent = generateICalContent();
+            
+            // Создаем blob и ссылку для скачивания
+            const blob = new Blob([icalContent], { type: 'text/calendar;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            
+            // Создаем ссылку для скачивания
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'family-birthdays.ics';
+            link.style.display = 'none';
+            
+            // Добавляем ссылку в DOM и кликаем по ней
+            document.body.appendChild(link);
+            link.click();
+            
+            // Очищаем
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+            
+            // Показываем сообщение об успехе
+            showMessage('✅ Календарь добавлен! Проверьте папку загрузок.', 'success');
+        }
+        
+        // Функция для генерации iCal содержимого
+        function generateICalContent() {
+            let icalContent = [
+                'BEGIN:VCALENDAR',
+                'VERSION:2.0',
+                'PRODID:-//Family Calendar//Family Birthdays//EN',
+                'CALSCALE:GREGORIAN',
+                'METHOD:PUBLISH',
+                'X-WR-CALNAME:Family Birthdays',
+                'X-WR-CALDESC:Family member birthdays from family tree data'
+            ];
+
+            // Обрабатываем каждого человека
+            FAMILY_DATA.people.forEach((person, index) => {
+                if (person.birth && person.birth.date) {
+                    const birthDate = person.birth.date;
+                    const formattedDate = birthDate.replace(/-/g, '');
+                    const displayName = person.name.display || `${person.name.given || ''} ${person.name.family || ''}`.trim();
+                    
+                    if (formattedDate) {
+                        // Создаем событие дня рождения
+                        const event = [
+                            'BEGIN:VEVENT',
+                            `UID:birthday-${person.id}-${Date.now()}-${index}`,
+                            `DTSTART;VALUE=DATE:${formattedDate}`,
+                            `DTEND;VALUE=DATE:${formattedDate}`,
+                            `SUMMARY:${escapeICalText(displayName)}'s Birthday`,
+                            `DESCRIPTION:${escapeICalText(displayName)}'s birthday`,
+                            'CATEGORIES:BIRTHDAY,FAMILY',
+                            'CLASS:PUBLIC',
+                            'STATUS:CONFIRMED',
+                            'TRANSP:TRANSPARENT',
+                            'END:VEVENT'
+                        ];
+                        
+                        icalContent.push(...event);
+                    }
+                }
+            });
+
+            icalContent.push('END:VCALENDAR');
+            
+            return icalContent.join('\r\n');
+        }
+        
+        // Функция для экранирования текста для iCal
+        function escapeICalText(text) {
+            if (!text) return '';
+            return text
+                .replace(/\\/g, '\\\\')
+                .replace(/;/g, '\\;')
+                .replace(/,/g, '\\,')
+                .replace(/\n/g, '\\n')
+                .replace(/\r/g, '\\r');
+        }
+        
+        // Функция для показа сообщений
+        function showMessage(message, type = 'info') {
+            // Удаляем предыдущие сообщения
+            const existingMessage = document.querySelector('.message');
+            if (existingMessage) {
+                existingMessage.remove();
+            }
+            
+            // Создаем новое сообщение
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}`;
+            messageDiv.textContent = message;
+            messageDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 15px 20px;
+                border-radius: 5px;
+                color: white;
+                font-weight: bold;
+                z-index: 1000;
+                animation: slideIn 0.3s ease-out;
+            `;
+            
+            // Настраиваем стили в зависимости от типа
+            if (type === 'success') {
+                messageDiv.style.background = '#27ae60';
+            } else if (type === 'error') {
+                messageDiv.style.background = '#e74c3c';
+            } else {
+                messageDiv.style.background = '#3498db';
+            }
+            
+            // Добавляем в DOM
+            document.body.appendChild(messageDiv);
+            
+            // Автоматически удаляем через 3 секунды
+            setTimeout(() => {
+                if (messageDiv.parentNode) {
+                    messageDiv.remove();
+                }
+            }, 3000);
         }
         
         // Функция полноэкранного режима
