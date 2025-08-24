@@ -1,11 +1,10 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Family Calendar//Family Birthdays//EN
+PRODID:-//Yesmukhanov Family//Family Tree//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Family Birthdays
-X-WR-CALDESC:Family member birthdays from family tree data
-X-APPLE-CALENDAR-COLOR:#FF2968
+X-WR-CALNAME:Yesmukhanov Family Birthdays
+X-WR-CALDESC:Birthdays of Yesmukhanov family members
 X-WR-TIMEZONE:Asia/Almaty
 BEGIN:VEVENT
 UID:birthday-p_1-20020512@family-calendar.com-2025

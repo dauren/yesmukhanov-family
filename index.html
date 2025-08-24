@@ -115,7 +115,7 @@
     
     <div class="controls">
         <!-- <a href="family-birthdays.ics" class="calendar-link">📅 Добавить в календарь</a> -->
-        <a href="family-birthdays.ics" class="calendar-link">📅 Календарь</a> 
+        <a href="family-birthdays-fixed.ics" class="calendar-link">📅 Календарь</a> 
         <!-- <button onclick="toggleFullscreen()">full screen</button> -->
     </div>
     
@@ -362,32 +362,43 @@
         
         // Функция для генерации iCal содержимого
         function generateICalContent() {
+            const now = new Date();
+            const timestamp = now.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+            
             let icalContent = [
                 'BEGIN:VCALENDAR',
                 'VERSION:2.0',
-                'PRODID:-//Family Calendar//Family Birthdays//EN',
+                'PRODID:-//Yesmukhanov Family//Family Tree//EN',
                 'CALSCALE:GREGORIAN',
                 'METHOD:PUBLISH',
-                'X-WR-CALNAME:Family Birthdays',
-                'X-WR-CALDESC:Family member birthdays from family tree data'
+                'X-WR-CALNAME:Yesmukhanov Family Birthdays',
+                'X-WR-CALDESC:Birthdays of Yesmukhanov family members',
+                'X-WR-TIMEZONE:Asia/Almaty'
             ];
 
+            let eventCount = 0;
             // Обрабатываем каждого человека
-            FAMILY_DATA.people.forEach((person, index) => {
-                if (person.birth && person.birth.date) {
+            FAMILY_DATA.people.forEach((person) => {
+                if (person.birth && person.birth.date && person.birth.date.match(/^\d{4}-\d{2}-\d{2}$/)) {
                     const birthDate = person.birth.date;
-                    const formattedDate = birthDate.replace(/-/g, '');
+                    const [year, month, day] = birthDate.split('-');
                     const displayName = person.name.display || `${person.name.given || ''} ${person.name.family || ''}`.trim();
                     
-                    if (formattedDate) {
-                        // Создаем событие дня рождения
+                    if (displayName && month && day) {
+                        eventCount++;
+                        // Используем текущий год для повторяющихся событий
+                        const currentYear = now.getFullYear();
+                        const eventDate = `${currentYear}${month}${day}`;
+                        
+                        // Создаем событие дня рождения как ежегодное
                         const event = [
                             'BEGIN:VEVENT',
-                            `UID:birthday-${person.id}-${Date.now()}-${index}`,
-                            `DTSTART;VALUE=DATE:${formattedDate}`,
-                            `DTEND;VALUE=DATE:${formattedDate}`,
-                            `SUMMARY:${escapeICalText(displayName)}'s Birthday`,
-                            `DESCRIPTION:${escapeICalText(displayName)}'s birthday`,
+                            `UID:birthday-${person.id}@yesmukhanov-family.com`,
+                            `DTSTAMP:${timestamp}`,
+                            `DTSTART;VALUE=DATE:${eventDate}`,
+                            `SUMMARY:🎂 ${escapeICalText(displayName)} - День рождения`,
+                            `DESCRIPTION:День рождения ${escapeICalText(displayName)}. Родился ${day}.${month}.${year}`,
+                            'RRULE:FREQ=YEARLY',
                             'CATEGORIES:BIRTHDAY,FAMILY',
                             'CLASS:PUBLIC',
                             'STATUS:CONFIRMED',
@@ -402,6 +413,7 @@
 
             icalContent.push('END:VCALENDAR');
             
+            console.log(`Создано событий: ${eventCount}`);
             return icalContent.join('\r\n');
         }
         

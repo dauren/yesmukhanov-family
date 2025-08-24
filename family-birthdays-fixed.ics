@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Yesmukhanov Family//Family Tree//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Yesmukhanov Family Birthdays
+X-WR-CALDESC:Birthdays of Yesmukhanov family members
+BEGIN:VEVENT
+UID:birthday-p_1@yesmukhanov-family.com
+DTSTAMP:20250124T120000Z
+DTSTART;VALUE=DATE:20250512
+SUMMARY:🎂 Абай Долабаев - День рождения
+DESCRIPTION:День рождения Абай Долабаев. Родился 12.05.2002
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_2@yesmukhanov-family.com
+DTSTAMP:20250124T120000Z
+DTSTART;VALUE=DATE:20251003
+SUMMARY:🎂 Абылайхан Кожамжаров - День рождения
+DESCRIPTION:День рождения Абылайхан Кожамжаров. Родился 03.10.2008
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_45@yesmukhanov-family.com
+DTSTAMP:20250124T120000Z
+DTSTART;VALUE=DATE:20250602
+SUMMARY:🎂 Дедушка Мухаметсеит - День рождения
+DESCRIPTION:День рождения Дедушка Мухаметсеит. Родился 02.06.1922
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_51@yesmukhanov-family.com
+DTSTAMP:20250124T120000Z
+DTSTART;VALUE=DATE:20251108
+SUMMARY:🎂 Женис Есмуханов - День рождения
+DESCRIPTION:День рождения Женис Есмуханов. Родился 08.11.1945
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_35@yesmukhanov-family.com
+DTSTAMP:20250124T120000Z
+DTSTART;VALUE=DATE:20250308
+SUMMARY:🎂 Бабушка Шамшия - День рождения
+DESCRIPTION:День рождения Бабушка Шамшия. Родился 08.03.1928
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
