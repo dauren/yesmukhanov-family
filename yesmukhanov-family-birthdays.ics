@@ -1,0 +1,1184 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Yesmukhanov Family//Family Tree//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Yesmukhanov Family Birthdays
+X-WR-CALDESC:Birthdays of Yesmukhanov family members with relationships
+BEGIN:VEVENT
+UID:birthday-p_1@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250512
+SUMMARY:🎂 Абай Долабаев - День рождения (Сын Гульнар)
+DESCRIPTION:День рождения Абай Долабаев. Родился 12.05.2002\n\nРодственные связи:\n• Сын Гульнар
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_2@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251003
+SUMMARY:🎂 Абылайхан Кожамжаров - День рождения (Внук Каиргельды\, сын Айгуль)
+DESCRIPTION:День рождения Абылайхан Кожамжаров. Родился 03.10.2008\n\nРодственные связи:\n• Внук Каиргельды\, сын Айгуль
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_3@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251220
+SUMMARY:🎂 Аделия Жакиянова - День рождения (Внучка Жениса\, дочь Анары)
+DESCRIPTION:День рождения Аделия Жакиянова. Родился 20.12.2010\n\nРодственные связи:\n• Внучка Жениса\, дочь Анары
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_4@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251210
+SUMMARY:🎂 Адильхан Каиргельды - День рождения (Внук Каиргельды\,  сын Бауржана)
+DESCRIPTION:День рождения Адильхан Каиргельды. Родился 10.12.2003\n\nРодственные связи:\n• Внук Каиргельды\,  сын Бауржана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_5@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250728
+SUMMARY:🎂 Адия Аманжолова - День рождения (Внучка Аманжола\,  дочь Армана)
+DESCRIPTION:День рождения Адия Аманжолова. Родился 28.07.2011\n\nРодственные связи:\n• Внучка Аманжола\,  дочь Армана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_6@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251028
+SUMMARY:🎂 Аида Каиржанова - День рождения (Внучка Каиржана\, дочь Батыржана)
+DESCRIPTION:День рождения Аида Каиржанова. Родился 28.10.2005\n\nРодственные связи:\n• Внучка Каиржана\, дочь Батыржана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_7@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250615
+SUMMARY:🎂 Аиша Саду - День рождения (Внучка Аманжол\, дочь Айжан)
+DESCRIPTION:День рождения Аиша Саду. Родился 15.06.2018\n\nРодственные связи:\n• Внучка Аманжол\, дочь Айжан
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_8@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250115
+SUMMARY:🎂 Айгуль Кожамжарова - День рождения (Дочь Каиргельды)
+DESCRIPTION:День рождения Айгуль Кожамжарова. Родился 15.01.1976\n\nРодственные связи:\n• Дочь Каиргельды
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_9@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250225
+SUMMARY:🎂 Айзере Долобаева - День рождения (Дочь Гульнар)
+DESCRIPTION:День рождения Айзере Долобаева. Родился 25.02.2014\n\nРодственные связи:\n• Дочь Гульнар
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_10@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250809
+SUMMARY:🎂 Айсултан Есмуханов - День рождения (Внук Каиргельды\, сын Бауржана)
+DESCRIPTION:День рождения Айсултан Есмуханов. Родился 09.08.2015\n\nРодственные связи:\n• Внук Каиргельды\, сын Бауржана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_11@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251204
+SUMMARY:🎂 Айсултан Куспеков - День рождения (Внук Каиржана\, сын Асель)
+DESCRIPTION:День рождения Айсултан Куспеков. Родился 04.12.2013\n\nРодственные связи:\n• Внук Каиржана\, сын Асель
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_12@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251001
+SUMMARY:🎂 Айтуар Каиржанов - День рождения (Внук Каиржана\, сын Батыржана)
+DESCRIPTION:День рождения Айтуар Каиржанов. Родился 01.10.2009\n\nРодственные связи:\n• Внук Каиржана\, сын Батыржана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_13@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250121
+SUMMARY:🎂 Алихан Женис - День рождения (Внук Жениса\,  сын Ерлан)
+DESCRIPTION:День рождения Алихан Женис. Родился 21.01.2005\n\nРодственные связи:\n• Внук Жениса\,  сын Ерлан
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_14@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250101
+SUMMARY:🎂 Алихан Кабдулла - День рождения (Внук Мейрама\, сын Саиды)
+DESCRIPTION:День рождения Алихан Кабдулла. Родился 01.01.2019\n\nРодственные связи:\n• Внук Мейрама\, сын Саиды
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_15@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250203
+SUMMARY:🎂 Алиша Сатыбалдина - День рождения (Внучка Амана\, дочь Асемгуль)
+DESCRIPTION:День рождения Алиша Сатыбалдина. Родился 03.02.2019\n\nРодственные связи:\n• Внучка Амана\, дочь Асемгуль
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_16@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:🎂 Алсу Тулегенова - День рождения (Внучка Жениса\, дочка Анары)
+DESCRIPTION:День рождения Алсу Тулегенова. Родился 20.01.2001\n\nРодственные связи:\n• Внучка Жениса\, дочка Анары
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_17@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250307
+SUMMARY:🎂 Алуа Нурлан кызы - День рождения (Внучка Жениса\, дочь Нурлана)
+DESCRIPTION:День рождения Алуа Нурлан кызы. Родился 07.03.1998\n\nРодственные связи:\n• Внучка Жениса\, дочь Нурлана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_18@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250206
+SUMMARY:🎂 Аман Есмуханов - День рождения (Сын Мухамметсеита)
+DESCRIPTION:День рождения Аман Есмуханов. Родился 06.02.1958\n\nРодственные связи:\n• Сын Мухамметсеита
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_19@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250520
+SUMMARY:🎂 Аманжол Есмуханов - День рождения (Сын Мухамметсеита)
+DESCRIPTION:День рождения Аманжол Есмуханов. Родился 20.05.1960\n\nРодственные связи:\n• Сын Мухамметсеита
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_20@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250828
+SUMMARY:🎂 Амина Кабдулла - День рождения (Внучка Мейрама\, дочь Саиды)
+DESCRIPTION:День рождения Амина Кабдулла. Родился 28.08.2009\n\nРодственные связи:\n• Внучка Мейрама\, дочь Саиды
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_21@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250809
+SUMMARY:🎂 Амина Куспекова - День рождения (Внучка Каиржана\, дочь Асель)
+DESCRIPTION:День рождения Амина Куспекова. Родился 09.08.2005\n\nРодственные связи:\n• Внучка Каиржана\, дочь Асель
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_22@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250320
+SUMMARY:🎂 Амир Аманжолов - День рождения (Внук Аманжола\, сын Армана)
+DESCRIPTION:День рождения Амир Аманжолов. Родился 20.03.2018\n\nРодственные связи:\n• Внук Аманжола\, сын Армана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_23@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250724
+SUMMARY:🎂 Амирхан Куспеков - День рождения (Внук Каиржана\, сын Асель)
+DESCRIPTION:День рождения Амирхан Куспеков. Родился 24.07.2008\n\nРодственные связи:\n• Внук Каиржана\, сын Асель
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_24@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251019
+SUMMARY:🎂 Анара Тулегенова - День рождения (Дочь Жениса)
+DESCRIPTION:День рождения Анара Тулегенова. Родился 19.10.1980\n\nРодственные связи:\n• Дочь Жениса
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_25@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250926
+SUMMARY:🎂 Анель Кожамжарова - День рождения (Внучка Каиргельды\, дочка Айгуль)
+DESCRIPTION:День рождения Анель Кожамжарова. Родился 26.09.1997\n\nРодственные связи:\n• Внучка Каиргельды\, дочка Айгуль
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_26@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251110
+SUMMARY:🎂 Анеля Аманжолова - День рождения (Внучка Аманжола\, дочь Армана)
+DESCRIPTION:День рождения Анеля Аманжолова. Родился 10.11.2013\n\nРодственные связи:\n• Внучка Аманжола\, дочь Армана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_27@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250408
+SUMMARY:🎂 Арайлым Садвакасова - День рождения (Внучка Жараса\, дочь Баханай)
+DESCRIPTION:День рождения Арайлым Садвакасова. Родился 08.04.2011\n\nРодственные связи:\n• Внучка Жараса\, дочь Баханай
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_28@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251022
+SUMMARY:🎂 Арсен Жакиянов - День рождения (Внук Жениса\, сын Анары)
+DESCRIPTION:День рождения Арсен Жакиянов. Родился 22.10.2013\n\nРодственные связи:\n• Внук Жениса\, сын Анары
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_29@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251027
+SUMMARY:🎂 Аружан Есмуханова - День рождения (внучка Жараса\, дочь Алмаза)
+DESCRIPTION:День рождения Аружан Есмуханова. Родился 27.10.2019\n\nРодственные связи:\n• внучка Жараса\, дочь Алмаза
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_30@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250227
+SUMMARY:🎂 Аружан Женис - День рождения (Внучка Жениса\, дочь Ерлана)
+DESCRIPTION:День рождения Аружан Женис. Родился 27.02.2007\n\nРодственные связи:\n• Внучка Жениса\, дочь Ерлана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_31@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251111
+SUMMARY:🎂 Арыстан Есмуханов - День рождения (Внук Жараса\, сын Алмаза)
+DESCRIPTION:День рождения Арыстан Есмуханов. Родился 11.11.2012\n\nРодственные связи:\n• Внук Жараса\, сын Алмаза
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_32@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251017
+SUMMARY:🎂 Асель Куспекова - День рождения (Дочь Каиржана)
+DESCRIPTION:День рождения Асель Куспекова. Родился 17.10.1980\n\nРодственные связи:\n• Дочь Каиржана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_33@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250803
+SUMMARY:🎂 Аяулым Жакиянова - День рождения (внучка Жениса\, дочь Анары)
+DESCRIPTION:День рождения Аяулым Жакиянова. Родился 03.08.2008\n\nРодственные связи:\n• внучка Жениса\, дочь Анары
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_34@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250622
+SUMMARY:🎂 Аяулым Садвакасова - День рождения (Внучка Жараса\, дочь Баханай)
+DESCRIPTION:День рождения Аяулым Садвакасова. Родился 22.06.2005\n\nРодственные связи:\n• Внучка Жараса\, дочь Баханай
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_35@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250308
+SUMMARY:🎂 Бабушка Шамшия - День рождения (Жена Мухамметсеита)
+DESCRIPTION:День рождения Бабушка Шамшия. Родился 08.03.1928\n\nРодственные связи:\n• Жена Мухамметсеита
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_36@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250805
+SUMMARY:🎂 Батыржан Есмуханов - День рождения (Сын Каиржана)
+DESCRIPTION:День рождения Батыржан Есмуханов. Родился 05.08.1978\n\nРодственные связи:\n• Сын Каиржана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_37@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250530
+SUMMARY:🎂 Баханай Есмуханова - День рождения (Дочь Жараса)
+DESCRIPTION:День рождения Баханай Есмуханова. Родился 30.05.1978\n\nРодственные связи:\n• Дочь Жараса
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_38@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250924
+SUMMARY:🎂 Гульбаршин Оспанов - День рождения (Жена Каиржана)
+DESCRIPTION:День рождения Гульбаршин Оспанов. Родился 24.09.1954\n\nРодственные связи:\n• Жена Каиржана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_39@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250703
+SUMMARY:🎂 Гульжан Есмуханова - День рождения (Жена Орала)
+DESCRIPTION:День рождения Гульжан Есмуханова. Родился 03.07.1969\n\nРодственные связи:\n• Жена Орала
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_40@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250217
+SUMMARY:🎂 Гульнар Есмуханова - День рождения (Дочь Мухамметсеита)
+DESCRIPTION:День рождения Гульнар Есмуханова. Родился 17.02.1969\n\nРодственные связи:\n• Дочь Мухамметсеита
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_41@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250101
+SUMMARY:🎂 Дана Есмуханова - День рождения (Внучка Жениса\, дочь Ерлан)
+DESCRIPTION:День рождения Дана Есмуханова. Родился 01.01.1997\n\nРодственные связи:\n• Внучка Жениса\, дочь Ерлан
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_42@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250714
+SUMMARY:🎂 Дария Саду - День рождения (Внучка Аманжола\, дочь Айжан)
+DESCRIPTION:День рождения Дария Саду. Родился 14.07.2006\n\nРодственные связи:\n• Внучка Аманжола\, дочь Айжан
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_43@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251024
+SUMMARY:🎂 Дархан Есмуханов - День рождения (Внук Жениса\, сын Ерлана)
+DESCRIPTION:День рождения Дархан Есмуханов. Родился 24.10.2000\n\nРодственные связи:\n• Внук Жениса\, сын Ерлана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_44@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250830
+SUMMARY:🎂 Даурен Есмуханов - День рождения (Сын Орала)
+DESCRIPTION:День рождения Даурен Есмуханов. Родился 30.08.1990\n\nРодственные связи:\n• Сын Орала
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_45@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250602
+SUMMARY:🎂 Дедушка Мухаметсеит - День рождения
+DESCRIPTION:День рождения Дедушка Мухаметсеит. Родился 02.06.1922
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_46@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250930
+SUMMARY:🎂 Джамиля Мухаметсеит - День рождения (Внучка Жараса\, дочь Куаныша)
+DESCRIPTION:День рождения Джамиля Мухаметсеит. Родился 30.09.2007\n\nРодственные связи:\n• Внучка Жараса\, дочь Куаныша
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_47@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250328
+SUMMARY:🎂 Дина Есмуханова - День рождения (Жена Амана)
+DESCRIPTION:День рождения Дина Есмуханова. Родился 28.03.1956\n\nРодственные связи:\n• Жена Амана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_48@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251101
+SUMMARY:🎂 Ерлан Есмуханов - День рождения (Сын Жениса)
+DESCRIPTION:День рождения Ерлан Есмуханов. Родился 01.11.1974\n\nРодственные связи:\n• Сын Жениса
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_49@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250707
+SUMMARY:🎂 Ертай Долобаев - День рождения (Муж Гульнар)
+DESCRIPTION:День рождения Ертай Долобаев. Родился 07.07.1966\n\nРодственные связи:\n• Муж Гульнар
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_50@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251024
+SUMMARY:🎂 Жарас Есмуханов - День рождения (Сын Мухамметсеита)
+DESCRIPTION:День рождения Жарас Есмуханов. Родился 24.10.1955\n\nРодственные связи:\n• Сын Мухамметсеита
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_51@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251108
+SUMMARY:🎂 Женис Есмуханов - День рождения (Сын Мухамметсеита)
+DESCRIPTION:День рождения Женис Есмуханов. Родился 08.11.1945\n\nРодственные связи:\n• Сын Мухамметсеита
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_52@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251212
+SUMMARY:🎂 Зина Есмуханова - День рождения (Жена Аманжола)
+DESCRIPTION:День рождения Зина Есмуханова. Родился 12.12.1963\n\nРодственные связи:\n• Жена Аманжола
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_53@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250304
+SUMMARY:🎂 Инкар Садвакасова - День рождения (Внучка Жараса\, дочь Баханай)
+DESCRIPTION:День рождения Инкар Садвакасова. Родился 04.03.2014\n\nРодственные связи:\n• Внучка Жараса\, дочь Баханай
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_54@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250504
+SUMMARY:🎂 Иран Есмуханов - День рождения (Сын Мухамметсеита)
+DESCRIPTION:День рождения Иран Есмуханов. Родился 04.05.1965\n\nРодственные связи:\n• Сын Мухамметсеита
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_55@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250209
+SUMMARY:🎂 Каиржан Есмуханов - День рождения (Сын Мухамметсеита)
+DESCRIPTION:День рождения Каиржан Есмуханов. Родился 09.02.1953\n\nРодственные связи:\n• Сын Мухамметсеита
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_56@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250719
+SUMMARY:🎂 Кайрат Есмуханов - День рождения (Внук Орала\, сын Даурена)
+DESCRIPTION:День рождения Кайрат Есмуханов. Родился 19.07.2021\n\nРодственные связи:\n• Внук Орала\, сын Даурена
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_57@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250817
+SUMMARY:🎂 Кайргельды Есмуханов - День рождения (Сын Мухамметсеита)
+DESCRIPTION:День рождения Кайргельды Есмуханов. Родился 17.08.1951\n\nРодственные связи:\n• Сын Мухамметсеита
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_58@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250130
+SUMMARY:🎂 Куаныш Мухаметсеитов - День рождения (Сын Жараса)
+DESCRIPTION:День рождения Куаныш Мухаметсеитов. Родился 30.01.1980\n\nРодственные связи:\n• Сын Жараса
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_59@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251021
+SUMMARY:🎂 Кульжан Есмуханова - День рождения (Жена Жениса)
+DESCRIPTION:День рождения Кульжан Есмуханова. Родился 21.10.1949\n\nРодственные связи:\n• Жена Жениса
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_60@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250112
+SUMMARY:🎂 Лаура Кожамжарова - День рождения (Внучка Каиргельды\, дочка Айгуль)
+DESCRIPTION:День рождения Лаура Кожамжарова. Родился 12.01.2003\n\nРодственные связи:\n• Внучка Каиргельды\, дочка Айгуль
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_61@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251127
+SUMMARY:🎂 Малика Нурланкызы - День рождения (Внучка Жениса\, дочь Нурлана)
+DESCRIPTION:День рождения Малика Нурланкызы. Родился 27.11.1998\n\nРодственные связи:\n• Внучка Жениса\, дочь Нурлана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_62@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250208
+SUMMARY:🎂 Малика Сатыбалдина - День рождения (Внучка Амана\, дочь Асемгуль)
+DESCRIPTION:День рождения Малика Сатыбалдина. Родился 08.02.2022\n\nРодственные связи:\n• Внучка Амана\, дочь Асемгуль
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_63@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251120
+SUMMARY:🎂 Мансур Файзулин - День рождения (Внук Ирана\, сын Мадины)
+DESCRIPTION:День рождения Мансур Файзулин. Родился 20.11.2022\n\nРодственные связи:\n• Внук Ирана\, сын Мадины
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_64@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251107
+SUMMARY:🎂 Мейрам Есмуханов - День рождения (Сын Мухамметсеита)
+DESCRIPTION:День рождения Мейрам Есмуханов. Родился 07.11.1962\n\nРодственные связи:\n• Сын Мухамметсеита
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_65@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250206
+SUMMARY:🎂 Мухаммедкаир Кайржанов - День рождения (Внук Каиржана\, сын Батыржана)
+DESCRIPTION:День рождения Мухаммедкаир Кайржанов. Родился 06.02.2007\n\nРодственные связи:\n• Внук Каиржана\, сын Батыржана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_66@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:🎂 Нурлан Есмуханов - День рождения (Сын Жениса)
+DESCRIPTION:День рождения Нурлан Есмуханов. Родился 20.01.1972\n\nРодственные связи:\n• Сын Жениса
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_67@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250805
+SUMMARY:🎂 Оля Есмуханова - День рождения (Жена Каиргельды)
+DESCRIPTION:День рождения Оля Есмуханова. Родился 05.08.1952\n\nРодственные связи:\n• Жена Каиргельды
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_68@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250605
+SUMMARY:🎂 Орал Есмуханов - День рождения (Сын Мухамметсеита)
+DESCRIPTION:День рождения Орал Есмуханов. Родился 05.06.1967\n\nРодственные связи:\n• Сын Мухамметсеита
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_69@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250609
+SUMMARY:🎂 Рахат Есмуханов - День рождения (Внук Каиргельды\, сын Бауржана)
+DESCRIPTION:День рождения Рахат Есмуханов. Родился 09.06.2006\n\nРодственные связи:\n• Внук Каиргельды\, сын Бауржана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_70@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251212
+SUMMARY:🎂 Роза Есмуханова - День рождения (Жена Мейрама)
+DESCRIPTION:День рождения Роза Есмуханова. Родился 12.12.1966\n\nРодственные связи:\n• Жена Мейрама
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_71@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250501
+SUMMARY:🎂 Санжар Каиргельды - День рождения (Внук Каиргельды\, сын Бауржан)
+DESCRIPTION:День рождения Санжар Каиргельды. Родился 01.05.2008\n\nРодственные связи:\n• Внук Каиргельды\, сын Бауржан
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_72@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250121
+SUMMARY:🎂 Султана Кабдулла - День рождения (Внучка Мейрама\, дочь Саиды)
+DESCRIPTION:День рождения Султана Кабдулла. Родился 21.01.2013\n\nРодственные связи:\n• Внучка Мейрама\, дочь Саиды
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_73@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250601
+SUMMARY:🎂 Талгат Есмуханов - День рождения (Внук Орала\, сын Даурена)
+DESCRIPTION:День рождения Талгат Есмуханов. Родился 01.06.2018\n\nРодственные связи:\n• Внук Орала\, сын Даурена
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_74@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251206
+SUMMARY:🎂 Ернур Букенбаев - День рождения (Внук Ирана\, сын Мадины)
+DESCRIPTION:День рождения Ернур Букенбаев. Родился 06.12.2008\n\nРодственные связи:\n• Внук Ирана\, сын Мадины
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_75@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250921
+SUMMARY:🎂 Амир - День рождения (Внук Ирана\, сын Айданы)
+DESCRIPTION:День рождения Амир. Родился 21.09.2021\n\nРодственные связи:\n• Внук Ирана\, сын Айданы
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_76@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250506
+SUMMARY:🎂 Айдана Есмуханова - День рождения (Дочь Ирана)
+DESCRIPTION:День рождения Айдана Есмуханова. Родился 06.05.1996\n\nРодственные связи:\n• Дочь Ирана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_77@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251110
+SUMMARY:🎂 Мадина Есмуханова - День рождения (Дочь Ирана)
+DESCRIPTION:День рождения Мадина Есмуханова. Родился 10.11.1988\n\nРодственные связи:\n• Дочь Ирана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_78@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250607
+SUMMARY:🎂 Саида Есмуханова - День рождения (Дочь Мейрама)
+DESCRIPTION:День рождения Саида Есмуханова. Родился 07.06.1984\n\nРодственные связи:\n• Дочь Мейрама
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_79@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250806
+SUMMARY:🎂 Бауржан Есмуханов - День рождения (Сын Каиргельды)
+DESCRIPTION:День рождения Бауржан Есмуханов. Родился 06.08.1974\n\nРодственные связи:\n• Сын Каиргельды
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_80@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250721
+SUMMARY:🎂 Алмаз Есмуханов - День рождения (Сын Жараса)
+DESCRIPTION:День рождения Алмаз Есмуханов. Родился 21.07.1982\n\nРодственные связи:\n• Сын Жараса
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_81@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250330
+SUMMARY:🎂 Асемгуль Есмуханова - День рождения (Дочь Амана)
+DESCRIPTION:День рождения Асемгуль Есмуханова. Родился 30.03.1984\n\nРодственные связи:\n• Дочь Амана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_82@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250404
+SUMMARY:🎂 Айжан Бекмурзина - День рождения (Дочь Аманжола)
+DESCRIPTION:День рождения Айжан Бекмурзина. Родился 04.04.1988\n\nРодственные связи:\n• Дочь Аманжола
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_83@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250207
+SUMMARY:🎂 Арман Есмуханов - День рождения (Сын Аманжола)
+DESCRIPTION:День рождения Арман Есмуханов. Родился 07.02.1985\n\nРодственные связи:\n• Сын Аманжола
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_84@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250413
+SUMMARY:🎂 Олжас Есмуханов - День рождения (Внук Жараса\, сын Баханай)
+DESCRIPTION:День рождения Олжас Есмуханов. Родился 13.04.1999\n\nРодственные связи:\n• Внук Жараса\, сын Баханай
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_85@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250626
+SUMMARY:🎂 Адиль Есмуханов - День рождения (сын Орала)
+DESCRIPTION:День рождения Адиль Есмуханов. Родился 26.06.1996\n\nРодственные связи:\n• сын Орала
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_86@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250922
+SUMMARY:🎂 Ансар Есмуханов - День рождения (сын Орала)
+DESCRIPTION:День рождения Ансар Есмуханов. Родился 22.09.2005\n\nРодственные связи:\n• сын Орала
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_87@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250704
+SUMMARY:🎂 Мариям - День рождения (Внучка Ирана\, дочь Айданы)
+DESCRIPTION:День рождения Мариям. Родился 04.07.2024\n\nРодственные связи:\n• Внучка Ирана\, дочь Айданы
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_88@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250429
+SUMMARY:🎂 Ислам Саду - День рождения (Внук Аманжола\, сын Айжан)
+DESCRIPTION:День рождения Ислам Саду. Родился 29.04.2009\n\nРодственные связи:\n• Внук Аманжола\, сын Айжан
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_89@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250805
+SUMMARY:🎂 Жасмин Умирбекова - День рождения (Правнучка Каиргельды\, Внучка Айгуль\, Дочь Анель)
+DESCRIPTION:День рождения Жасмин Умирбекова. Родился 05.08.2019\n\nРодственные связи:\n• Правнучка Каиргельды\, Внучка Айгуль\, Дочь Анель
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_90@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20251217
+SUMMARY:🎂 Эмина Умирбекова - День рождения (Правнучка Каиргельды\, Внучка Айгуль\, Дочь Анель)
+DESCRIPTION:День рождения Эмина Умирбекова. Родился 17.12.2022\n\nРодственные связи:\n• Правнучка Каиргельды\, Внучка Айгуль\, Дочь Анель
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_91@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250715
+SUMMARY:🎂 Риза Садвакасова - День рождения (Внучка Жараса\, дочь Баханай)
+DESCRIPTION:День рождения Риза Садвакасова. Родился 15.07.2020\n\nРодственные связи:\n• Внучка Жараса\, дочь Баханай
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_92@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250316
+SUMMARY:🎂 Адина Сатыбалдина - День рождения (Внучка Амана\, дочь Асемгуль)
+DESCRIPTION:День рождения Адина Сатыбалдина. Родился 16.03.2013\n\nРодственные связи:\n• Внучка Амана\, дочь Асемгуль
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_93@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250407
+SUMMARY:🎂 Айлин Сатыбалдина - День рождения (Внучка Амана\, дочь Асемгуль)
+DESCRIPTION:День рождения Айлин Сатыбалдина. Родился 07.04.2016\n\nРодственные связи:\n• Внучка Амана\, дочь Асемгуль
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_94@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250925
+SUMMARY:🎂 Сайран Есмуханова - День рождения (Жена Жараса)
+DESCRIPTION:День рождения Сайран Есмуханова. Родился 25.09.1957\n\nРодственные связи:\n• Жена Жараса
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_95@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250924
+SUMMARY:🎂 Салима Есмуханова - День рождения (Жена Ирана)
+DESCRIPTION:День рождения Салима Есмуханова. Родился 24.09.1966\n\nРодственные связи:\n• Жена Ирана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_96@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250108
+SUMMARY:🎂 Азиз Аманжолов - День рождения (Жена Ирана)
+DESCRIPTION:День рождения Азиз Аманжолов. Родился 08.01.2025\n\nРодственные связи:\n• Жена Ирана
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_97@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250324
+SUMMARY:🎂 Санжар Караулов - День рождения (сын Даурена)
+DESCRIPTION:День рождения Санжар Караулов. Родился 24.03.2007\n\nРодственные связи:\n• сын Даурена
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-p_98@yesmukhanov-family.com
+DTSTAMP:20250824T113924Z
+DTSTART;VALUE=DATE:20250703
+SUMMARY:🎂 Алиша Мухаметсеит - День рождения (Внучка Жараса\, дочь Куаныша)
+DESCRIPTION:День рождения Алиша Мухаметсеит. Родился 03.07.2021\n\nРодственные связи:\n• Внучка Жараса\, дочь Куаныша
+RRULE:FREQ=YEARLY
+CATEGORIES:BIRTHDAY,FAMILY
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

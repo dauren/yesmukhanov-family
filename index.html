@@ -6,6 +6,9 @@
     <title>Генеалогическое древо семьи Есмухановых - FamilyTreeJS</title>
     <script src="familytree.js"></script>
     <style>
+        h2{
+            text-align: center;
+        }
         html,body{
             width: 100%;
             height: 100%;
@@ -107,7 +110,7 @@
 
 </head>
 <body>
-    <h1>Yesmukhanov Family Tree</h1>
+    <h2>Yesmukhanov Family Tree</h2>
     
     <div class="stats" id="stats">
         <p>Загрузка данных...</p>
@@ -115,7 +118,7 @@
     
     <div class="controls">
         <!-- <a href="family-birthdays.ics" class="calendar-link">📅 Добавить в календарь</a> -->
-        <a href="webcal://calendar.google.com/calendar/ical/10d826f2eb0887aea0741e608253e3ee19e893e9b85ca4302d541035cf343ea5%40group.calendar.google.com/private-d9d9f8b82e50346cec6badaa44a0d994/basic.ics" class="calendar-link">📅 Календарь</a> 
+        <a href="#" onclick="downloadFamilyCalendar(); return false;" class="calendar-link">📅 Календарь </a> 
         <!-- <button onclick="toggleFullscreen()">full screen</button> -->
     </div>
     
@@ -220,7 +223,6 @@
             subtreeSeparation: 80,
             levelSeparation: 150,
             editForm: null,
-            enableSearch: false,
             
             // Данные - все узлы с указанием корня
             nodes: familyNodes.map(node => {
@@ -334,6 +336,118 @@
         }
         
         
+        // Функция для генерации календаря с родственными связями
+        function generateCompleteCalendar() {
+            const now = new Date();
+            const timestamp = now.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+            
+            let icalContent = [
+                'BEGIN:VCALENDAR',
+                'VERSION:2.0',
+                'PRODID:-//Yesmukhanov Family//Family Tree//EN',
+                'CALSCALE:GREGORIAN',
+                'METHOD:PUBLISH',
+                'X-WR-CALNAME:Yesmukhanov Family Birthdays',
+                'X-WR-CALDESC:Birthdays of Yesmukhanov family members with relationships'
+            ];
+
+            let eventCount = 0;
+            
+            // Функция для экранирования текста iCal
+            function escapeICalText(text) {
+                if (!text) return '';
+                return text
+                    .replace(/\\/g, '\\\\')
+                    .replace(/;/g, '\\;')
+                    .replace(/,/g, '\\,')
+                    .replace(/\n/g, '\\n')
+                    .replace(/\r/g, '\\r');
+            }
+
+            // Обрабатываем каждого человека
+            FAMILY_DATA.people.forEach((person) => {
+                if (person.birth && person.birth.date && person.birth.date.match(/^\d{4}-\d{2}-\d{2}$/)) {
+                    const birthDate = person.birth.date;
+                    const [year, month, day] = birthDate.split('-');
+                    const displayName = person.name.display || `${person.name.given || ''} ${person.name.family || ''}`.trim();
+                    
+                    if (displayName && month && day) {
+                        eventCount++;
+                        // Используем текущий год для повторяющихся событий
+                        const currentYear = now.getFullYear();
+                        const eventDate = `${currentYear}${month}${day}`;
+                        
+                        // Создаем описание с родственными связями
+                        let description = `День рождения ${escapeICalText(displayName)}. Родился ${day}.${month}.${year}`;
+                        
+                        // Добавляем информацию о родственных связях (aka)
+                        if (person.name.aka && person.name.aka.length > 0) {
+                            description += '\\n\\nРодственные связи:';
+                            person.name.aka.forEach(relation => {
+                                description += `\\n• ${escapeICalText(relation)}`;
+                            });
+                        }
+                        
+                        // Создаем заголовок с основной информацией
+                        let summary = `🎂 ${escapeICalText(displayName)} - День рождения`;
+                        if (person.name.aka && person.name.aka.length > 0) {
+                            // Добавляем первую связь в заголовок для краткости
+                            summary += ` (${escapeICalText(person.name.aka[0])})`;
+                        }
+                        
+                        // Создаем событие дня рождения как ежегодное
+                        const event = [
+                            'BEGIN:VEVENT',
+                            `UID:birthday-${person.id}@yesmukhanov-family.com`,
+                            `DTSTAMP:${timestamp}`,
+                            `DTSTART;VALUE=DATE:${eventDate}`,
+                            `SUMMARY:${summary}`,
+                            `DESCRIPTION:${description}`,
+                            'RRULE:FREQ=YEARLY',
+                            'CATEGORIES:BIRTHDAY,FAMILY',
+                            'CLASS:PUBLIC',
+                            'STATUS:CONFIRMED',
+                            'TRANSP:TRANSPARENT',
+                            'END:VEVENT'
+                        ];
+                        
+                        icalContent.push(...event);
+                    }
+                }
+            });
+
+            icalContent.push('END:VCALENDAR');
+            
+            console.log(`Создано событий с родственными связями: ${eventCount}`);
+            return icalContent.join('\r\n');
+        }
+        
+        // Функция для скачивания календаря с родственными связями
+        function downloadFamilyCalendar() {
+            const icalContent = generateCompleteCalendar();
+            
+            // Создаем blob и ссылку для скачивания
+            const blob = new Blob([icalContent], { type: 'text/calendar;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            
+            // Создаем ссылку для скачивания
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'yesmukhanov-family-birthdays.ics';
+            link.style.display = 'none';
+            
+            // Добавляем ссылку в DOM и кликаем по ней
+            document.body.appendChild(link);
+            link.click();
+            
+            // Очищаем
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+            
+            // Показываем сообщение об успехе
+            showMessage('✅ Календарь с родственными связями скачан!', 'success');
+        }
+
         // Функция для показа сообщений
         function showMessage(message, type = 'info') {
             // Удаляем предыдущие сообщения

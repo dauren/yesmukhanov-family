@@ -220,9 +220,9 @@ const FAMILY_DATA = {
     {
       "id": "p_9",
       "name": {
-        "display": "Айзере Долобаева",
+        "display": "Айзере Ертайкызы",
         "given": "Айзере",
-        "family": "Долобаева",
+        "family": "Ертайкызы",
         "middle": null,
         "aka": [
           "Дочь Гульнар"
