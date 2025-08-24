@@ -333,120 +333,6 @@
             }, 500);
         }
         
-        // Функция для добавления календаря
-        function addToCalendar() {
-            // Создаем содержимое iCal файла
-            const icalContent = generateICalContent();
-            
-            // Создаем blob и ссылку для скачивания
-            const blob = new Blob([icalContent], { type: 'text/calendar;charset=utf-8' });
-            const url = URL.createObjectURL(blob);
-            
-            // Создаем ссылку для скачивания
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'family-birthdays-complete.ics';
-            link.style.display = 'none';
-            
-            // Добавляем ссылку в DOM и кликаем по ней
-            document.body.appendChild(link);
-            link.click();
-            
-            // Очищаем
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-            
-            // Показываем сообщение об успехе
-            showMessage('✅ Календарь добавлен! Проверьте папку загрузок.', 'success');
-        }
-        
-        // Создаем полный календарь при загрузке страницы
-        function createCompleteCalendar() {
-            const icalContent = generateICalContent();
-            
-            // Считаем события
-            const eventCount = (icalContent.match(/BEGIN:VEVENT/g) || []).length;
-            console.log(`Создается календарь с ${eventCount} событиями`);
-            
-            // Создаем blob для статического файла
-            const blob = new Blob([icalContent], { type: 'text/calendar;charset=utf-8' });
-            const url = URL.createObjectURL(blob);
-            
-            // Обновляем ссылку на календарь
-            const calendarLink = document.querySelector('.calendar-link');
-            if (calendarLink) {
-                calendarLink.href = url;
-                calendarLink.download = 'family-birthdays-complete.ics';
-            }
-        }
-        
-        // Функция для генерации iCal содержимого
-        function generateICalContent() {
-            const now = new Date();
-            const timestamp = now.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-            
-            let icalContent = [
-                'BEGIN:VCALENDAR',
-                'VERSION:2.0',
-                'PRODID:-//Yesmukhanov Family//Family Tree//EN',
-                'CALSCALE:GREGORIAN',
-                'METHOD:PUBLISH',
-                'X-WR-CALNAME:Yesmukhanov Family Birthdays',
-                'X-WR-CALDESC:Birthdays of Yesmukhanov family members',
-                'X-WR-TIMEZONE:Asia/Almaty'
-            ];
-
-            let eventCount = 0;
-            // Обрабатываем каждого человека
-            FAMILY_DATA.people.forEach((person) => {
-                if (person.birth && person.birth.date && person.birth.date.match(/^\d{4}-\d{2}-\d{2}$/)) {
-                    const birthDate = person.birth.date;
-                    const [year, month, day] = birthDate.split('-');
-                    const displayName = person.name.display || `${person.name.given || ''} ${person.name.family || ''}`.trim();
-                    
-                    if (displayName && month && day) {
-                        eventCount++;
-                        // Используем текущий год для повторяющихся событий
-                        const currentYear = now.getFullYear();
-                        const eventDate = `${currentYear}${month}${day}`;
-                        
-                        // Создаем событие дня рождения как ежегодное
-                        const event = [
-                            'BEGIN:VEVENT',
-                            `UID:birthday-${person.id}@yesmukhanov-family.com`,
-                            `DTSTAMP:${timestamp}`,
-                            `DTSTART;VALUE=DATE:${eventDate}`,
-                            `SUMMARY:🎂 ${escapeICalText(displayName)} - День рождения`,
-                            `DESCRIPTION:День рождения ${escapeICalText(displayName)}. Родился ${day}.${month}.${year}`,
-                            'RRULE:FREQ=YEARLY',
-                            'CATEGORIES:BIRTHDAY,FAMILY',
-                            'CLASS:PUBLIC',
-                            'STATUS:CONFIRMED',
-                            'TRANSP:TRANSPARENT',
-                            'END:VEVENT'
-                        ];
-                        
-                        icalContent.push(...event);
-                    }
-                }
-            });
-
-            icalContent.push('END:VCALENDAR');
-            
-            console.log(`Создано событий: ${eventCount}`);
-            return icalContent.join('\r\n');
-        }
-        
-        // Функция для экранирования текста для iCal
-        function escapeICalText(text) {
-            if (!text) return '';
-            return text
-                .replace(/\\/g, '\\\\')
-                .replace(/;/g, '\\;')
-                .replace(/,/g, '\\,')
-                .replace(/\n/g, '\\n')
-                .replace(/\r/g, '\\r');
-        }
         
         // Функция для показа сообщений
         function showMessage(message, type = 'info') {
@@ -519,9 +405,6 @@
         // Инициализация при загрузке
         document.addEventListener('DOMContentLoaded', function() {
             updateStats();
-            
-            // Создаем полный календарь
-            createCompleteCalendar();
             
             // Дождаться полной загрузки дерева
             family.on('init', function() {
