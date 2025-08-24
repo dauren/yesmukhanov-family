@@ -640,23 +640,37 @@ function generateICal() {
         // Создаем уникальный UID
         const uid = `birthday-${person.id}-${formattedDate}@family-calendar.com`;
         
-        // Create birthday event
-        const event = [
-          'BEGIN:VEVENT',
-          `UID:${uid}`,
-          `DTSTART;VALUE=DATE:${formattedDate}`,
-          `SUMMARY:🎂 ${escapeICalText(displayName)} - День рождения`,
-          `DESCRIPTION:День рождения ${escapeICalText(displayName)}`,
-          'RRULE:FREQ=YEARLY',
-          'CATEGORIES:BIRTHDAY,FAMILY',
-          'CLASS:PUBLIC',
-          'STATUS:CONFIRMED',
-          'TRANSP:TRANSPARENT',
-          `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z`,
-          'END:VEVENT'
-        ];
+        // Получаем текущий год и создаем события на ближайшие 10 лет
+        const currentYear = new Date().getFullYear();
+        const birthYear = parseInt(birthDate.split('-')[0]);
         
-        icalContent.push(...event);
+        for (let year = currentYear; year <= currentYear + 10; year++) {
+          const age = year - birthYear;
+          const eventDate = `${year}${birthDate.substring(4)}`; // YYYYMMDD
+          
+          // Формируем описание с информацией о родственных связях
+          let description = `День рождения ${escapeICalText(displayName)} - исполняется ${age} лет`;
+          if (person.name.aka && person.name.aka.length > 0) {
+            description += `\n\nРодственные связи:\n${person.name.aka.map(aka => `• ${escapeICalText(aka)}`).join('\n')}`;
+          }
+          
+          // Create birthday event for this year
+          const event = [
+            'BEGIN:VEVENT',
+            `UID:${uid}-${year}`,
+            `DTSTART;VALUE=DATE:${eventDate}`,
+            `SUMMARY:🎂 ${escapeICalText(displayName)} - ${age} лет`,
+            `DESCRIPTION:${description}`,
+            'CATEGORIES:BIRTHDAY,FAMILY',
+            'CLASS:PUBLIC',
+            'STATUS:CONFIRMED',
+            'TRANSP:TRANSPARENT',
+            `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z`,
+            'END:VEVENT'
+          ];
+          
+          icalContent.push(...event);
+        }
       }
     }
   });

@@ -2592,6 +2592,34 @@ const FAMILY_DATA = {
         "privacy": "private"
       }
     }
+    ,
+    {
+      "id": "p_97",
+      "name": {
+        "display": "Санжар Караулов",
+        "given": "Санжар",
+        "family": "Караулов",
+        "middle": null,
+        "aka": [
+          "сын Даурена"
+        ]
+      },
+      "gender": "male",
+      "birth": {
+        "date": "2007-03-24",
+        "place": null
+      },
+      "death": {
+        "date": null,
+        "place": null
+      },
+      "notes": "",
+      "media": [],
+      "meta": {
+        "last_updated": "2025-08-23",
+        "privacy": "private"
+      }
+    }
   ],
   "relationships": [
     {
@@ -3119,6 +3147,11 @@ const FAMILY_DATA = {
       "type": "parent-child",
       "parent": "p_83",
       "child": "p_96"
+    },
+    {
+      "type": "parent-child",
+      "parent": "p_44",
+      "child": "p_97"
     },
     
 
