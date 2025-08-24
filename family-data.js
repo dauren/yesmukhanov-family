@@ -2591,8 +2591,7 @@ const FAMILY_DATA = {
         "last_updated": "2025-08-23",
         "privacy": "private"
       }
-    }
-    ,
+    },
     {
       "id": "p_97",
       "name": {
@@ -2607,6 +2606,34 @@ const FAMILY_DATA = {
       "gender": "male",
       "birth": {
         "date": "2007-03-24",
+        "place": null
+      },
+      "death": {
+        "date": null,
+        "place": null
+      },
+      "notes": "",
+      "media": [],
+      "meta": {
+        "last_updated": "2025-08-23",
+        "privacy": "private"
+      }
+    }
+    ,
+    {
+      "id": "p_98",
+      "name": {
+        "display": "Алиша Мухаметсеит",
+        "given": "Алиша",
+        "family": "Мухаметсеит",
+        "middle": null,
+        "aka": [
+          "Внучка Жараса, дочь Куаныша"
+        ]
+      },
+      "gender": "male",
+      "birth": {
+        "date": "2021-07-03",
         "place": null
       },
       "death": {
@@ -3153,6 +3180,11 @@ const FAMILY_DATA = {
       "parent": "p_44",
       "child": "p_97"
     },
+    {
+      "type": "parent-child",
+      "parent": "p_74",
+       "child": "p_98"
+    }
     
 
 
